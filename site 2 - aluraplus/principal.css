@@ -1,0 +1,121 @@
+:root {
+    --branco-principal:#FFFFFF;
+    --cinza-secundario:#C0C0C0;
+    --botao-azul:#167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-princpal: 'inter';
+    --botao-azul-afeito: #167bf7;
+}
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-princpal);
+    font-size: 16px;
+    font-weight: 400;
+}
+.principal {
+    background-image: url("Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+} 
+.container-botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+.botao-secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal) ;
+}
+.container-aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+.container-titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+.container-imagem {
+    margin: 1em 0 2em 0;
+}
+.container-caixa {
+    margin: 0 6em;
+}
+.secundario-imagem {
+    width: 80%;
+}
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+.descricao-titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.3em;
+}
+.descricao-texto {
+    color: var(--cinza-secundario);
+}
+.secundario-botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+.container-descricao {
+    padding: 2em;
+}
+.dispositivos-lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 32px;
+    margin: 2em 0;
+}
+.dispositivos {
+    text-align: center;
+}
+.dispositivos-titulo {
+    font-size: 48px;
+    font-weight: 700;
+}
+.rodape {
+    text-align: center;
+    margin: 0 3em;
+}.rodape-logo {
+    margin: 2em;
+}
+.rodape-lista {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.item-link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+    padding: 1em;
+}
+.rodape-texto {
+    font-size: 14px;
+    color: var(--cinza-secundario);
+}
+.item-link a:hover {
+    color: var(--botao-azul);
+}
+.item-link a:active {
+    color: purple;
+}
+.container-botao:hover {
+    color: var(--cor-de-fundo);
+    background-color: #167BF7;
+}
